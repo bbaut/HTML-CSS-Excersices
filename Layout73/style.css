@@ -1,0 +1,49 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#container{
+    width: 500px;
+    height: 300px;
+    overflow: hidden; /* Everything out of the container will be hidden*/
+}
+
+.itemSlides{
+    height: 300px;
+    position: relative; /* relative in order to be toghether */
+}
+
+/*que es*/
+.slide{
+    background-color: aqua;
+    height: 100%;
+}
+
+.arrows{
+    height: 100%;
+    position: absolute; /* applies over his father (his closer element)*/
+    top: 0;
+    width: 100%; /*it occupies all the size */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px; /* letters not ot be at the sides*/
+}
+
+#slide1{
+    background-color: aqua;
+}
+
+#slide2{
+    background-color:beige;
+}
+
+#slide3{
+    background-color: greenyellow;
+}
+
+a{
+    text-decoration: none;
+}

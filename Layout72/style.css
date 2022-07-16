@@ -1,0 +1,43 @@
+:root{
+    --mono: "Oxygen mono", monospace;
+    --sans: Oxygen, sans-serif;
+}
+
+h1{
+    color: gray;
+    text-align: center;
+    font-family: var(--mono);
+}
+
+.rate {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    height: 46px;
+    padding: 0 10px;
+}
+
+input{
+    display: none;
+}
+
+.rate:not(:checked) > label {
+    width:2em;
+    cursor:pointer;
+    font-size:2em;
+    color:#ccc;
+}
+
+.rate label:hover{
+    color: rgb(255, 194, 134);
+    font-size: 2.5em;
+}
+
+.rate label:hover ~ label{
+    color: rgb(255, 194, 134);
+    font-size: 2.5em;
+}
+
+.rate > input:checked ~ label {
+    color: orange; 
+}
