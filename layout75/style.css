@@ -1,0 +1,21 @@
+.contener{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 10%;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.letter{
+    font-size: 2rem;
+    padding: 2%;
+}
+
+a:hover{
+    color: orange;
+    font-size: 4rem;
+}

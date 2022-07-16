@@ -1,0 +1,17 @@
+.container{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 30px 10px;
+}
+
+.part{
+    padding: 10px;
+    border: 1px solid black;
+    text-align: center;
+    top: 60%;
+}
+
+.container .part:not(:last-child) {
+    border-right: none;
+  }

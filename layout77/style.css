@@ -1,0 +1,151 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+
+  #selector{
+    text-align: center;
+    margin-top: 60px;
+}
+
+
+/**--------------------- TOP --------------------------------**/  
+  
+  body{
+  }
+  
+  .top-menu{
+    background: yellowgreen;
+    text-align:center;
+  }
+  
+  .top-menu ul{
+    display: inline-flex;
+    list-style:none;
+    color:black;
+  }
+  
+  .top-menu ul li{
+    width:120px;
+    margin:15px;
+    padding: 15px;
+  }
+  
+  a{
+    text-decoration:none;
+    color: black;
+  }
+  
+  a:hover{
+    color:white;
+  }
+  
+  .subnav{
+    display:none;
+  }
+  
+  li:hover .subnav{
+    display:block;
+    position:absolute;
+    background: yellowgreen;
+    margin-top: 15px;
+    margin-left:-15px;
+  }
+  
+  li:hover ul{
+    display:block;
+    margin:10px;
+  }*/
+
+/**----------------------------- LEFT ------------------------------------**/
+
+/*
+
+  .top-menu{
+    width: 250px;
+    height: 100%;
+    position: fixed;
+    background-color: yellowgreen;
+    top: 0;
+    left: 0;
+    padding: 20px 30px;
+  }
+
+  ul{
+    list-style: none;
+    color: black;
+  }
+
+  li{
+    padding: 20px 5px;
+  }
+
+  a{
+    text-decoration:none;
+    color: black;
+  }
+  
+  a:hover{
+    color:white;
+  }
+
+  .subnav{
+    display:none;
+  }
+
+  li:hover .subnav{
+    display:block;
+    position:absolute;
+    background: yellowgreen;
+    margin-top: 0;
+    margin-left: 100px;
+  }
+
+  /**--------------------------------- RIGHT --------------------------------**/
+
+  /*
+
+  .top-menu{
+    width: 250px;
+    height: 100%;
+    position: fixed;
+    background-color: yellowgreen;
+    top: 0;
+    right: 0;
+    padding: 20px 30px;
+  }
+
+  ul{
+    list-style: none;
+    color: black;
+  }
+
+  li{
+    padding: 20px 10px;
+  }
+
+  a{
+    text-decoration:none;
+    color: black;
+  }
+  
+  a:hover{
+    color:white;
+  }
+
+  .subnav{
+    display:none;
+  }
+
+  li:hover .subnav{
+    display:block;
+    position:absolute;
+    background: yellowgreen;
+    margin-top: 0;
+    margin-left: -220px;
+  }
+
+
+  /**--------------------------------------------------------------------------------**/

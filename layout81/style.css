@@ -1,0 +1,23 @@
+body{
+    text-align: center;
+    margin: 100px;
+}
+
+.parent{
+    background-color: aquamarine;
+    white-space: nowrap;
+    width: 50%;
+    border: 1px solid black;
+    text-align: center;
+    margin:100px;
+}
+
+.child{
+    background-color: yellowgreen;
+    display: inline-block;
+    width: 50%;
+    border: 1px solid black;  
+    position: relative;
+    padding: 100px;
+    left: 725px;
+}
