@@ -5,12 +5,8 @@ body{
 .container{
     width: 100%;
     height: 600px; /* Each part vertically must be of size 200px*/
-
     display: grid;
-
     justify-content: center     ;
-
-    /*grid-template-columns: 1fr 1fr 1fr;*/
     grid-template-columns: repeat(20,1fr);
     grid-template-rows: 1fr 1fr 1fr; /*Same portion*/
 
