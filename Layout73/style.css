@@ -1,49 +1,72 @@
 *{
     padding: 0;
     margin: 0;
+    text-align: center;
     box-sizing: border-box;
 }
 
-#container{
+h1{
+    padding: 30px;
+}
+
+#slider{
+    margin: auto;
     width: 500px;
     height: 300px;
-    overflow: hidden; /* Everything out of the container will be hidden*/
+    overflow: hidden;
+
 }
 
-.itemSlides{
-    height: 300px;
-    position: relative; /* relative in order to be toghether */
-}
-
-/*que es*/
-.slide{
-    background-color: aqua;
+#slider ul{
+    position: relative;
+    width: 500%; /* Because there are 5 images*/
     height: 100%;
-}
-
-.arrows{
-    height: 100%;
-    position: absolute; /* applies over his father (his closer element)*/
-    top: 0;
-    width: 100%; /*it occupies all the size */
+    animation: 20s slider infinite;
     display: flex;
+}
+
+#slider ul img{
+    float: left;
+    width: 100%; /* 500% / 5 images */
+    height: 100%;
+}
+
+
+
+li{
     align-items: center;
-    justify-content: space-between;
-    padding: 20px; /* letters not ot be at the sides*/
+    list-style: none;
+    width: 100vw;
+    width: 100vh;
 }
 
-#slide1{
-    background-color: aqua;
-}
+@keyframes slider{
+    0%{
+        left: 0;
+    }
 
-#slide2{
-    background-color:beige;
-}
-
-#slide3{
-    background-color: greenyellow;
-}
-
-a{
-    text-decoration: none;
+    20%{
+        left: 0;
+    }
+    25%{
+        left: -100%;
+    }
+    45%{
+        left: -100%;
+    }
+    50%{
+        left: -200%;
+    }
+    70%{
+        left: -200%;
+    }
+    75%{
+        left: -300%;
+    }
+    95%{
+        left: -300%;
+    }
+    100%{
+        left: -400%;
+    }
 }
