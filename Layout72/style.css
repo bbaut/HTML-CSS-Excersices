@@ -3,41 +3,56 @@
     --sans: Oxygen, sans-serif;
 }
 
+body{
+    margin: 50px;
+}
+
 h1{
     color: gray;
-    text-align: center;
     font-family: var(--mono);
 }
 
 .rate {
     display: flex;
     flex-direction: row-reverse;
+    align-items: center;
     justify-content: center;
-    height: 46px;
-    padding: 0 10px;
+    padding:0;
+    width: 1010px;
+    height: 215px;
+    background: url(./star_two_sprite.png);
+    background-repeat: no-repeat;
+    position: absolute;
 }
 
 input{
     display: none;
+    position: absolute;
+    opacity: 0;
 }
 
-.rate:not(:checked) > label {
-    width:2em;
-    cursor:pointer;
-    font-size:2em;
-    color:#ccc;
-}
+.rate label {
+    display: block;
+    width: 202px;
+    height: 215px;
+    margin: 0;
+    padding: 0;
+    text-indent: -999em;
+    float: left;
+    position: relative;
+    z-index: 20;
+    cursor: pointer;
+    background-image: url(./star_two_sprite.png);
+  }
 
-.rate label:hover{
-    color: rgb(255, 194, 134);
-    font-size: 2.5em;
-}
+.rate label:hover {
+    background-position: 0 -215px;
+  }
 
-.rate label:hover ~ label{
-    color: rgb(255, 194, 134);
-    font-size: 2.5em;
-}
+.rate label:hover ~ label {
+    background-position: 0 -215px;
+  }
 
-.rate > input:checked ~ label {
-    color: orange; 
+  .rate > input:checked ~ label {
+    background-position: 0 -215px;
 }
