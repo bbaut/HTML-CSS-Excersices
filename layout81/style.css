@@ -1,23 +1,26 @@
 body{
     text-align: center;
-    margin: 100px;
 }
 
-.parent{
+.container{
+    width: 100%;
+    height: 800px;
+    padding: 0px;
+    display: grid;
+    justify-content: center     ;
+    grid-template-columns: 1fr 1fr; /*Each element has 50% from the total width*/
+}
+
+.element1{
     background-color: aquamarine;
-    white-space: nowrap;
-    width: 50%;
-    border: 1px solid black;
-    text-align: center;
-    margin:100px;
+    border: 2px solid black;
+    padding: 30px;
+    font-size: 6rem;
 }
 
-.child{
+.element2{
     background-color: yellowgreen;
-    display: inline-block;
-    width: 50%;
-    border: 1px solid black;  
-    position: relative;
-    padding: 100px;
-    left: 725px;
+    border: 2px solid black;
+    padding: 30px;
+    font-size: 6rem;    
 }
