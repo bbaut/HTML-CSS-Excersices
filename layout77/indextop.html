@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top-display navigation bar</title>
+    <link rel="stylesheet" href="styletop.css">
+</head>
+<body>
+    <nav class="top-menu">
+        <ul class="navlist">
+            <li><a href="#">Who we are</a></li>
+            <li><a href="#">What we do</a>
+                <nav class="subnav">
+                    <ul class="subnavlist">
+                        <li><a href="#">History</a></li>
+                        <li><a href="#">Why theoretical physics</a></li>
+                        <li><a href="#">Facility</a></li>
+                        <li><a href="#">Funding</a></li>
+                    </ul>
+                </nav>
+            </li>
+            <li><a href="#">People</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Info For</a></li>
+        </ul>
+    </nav>  
+
+    <section id="selector">
+        <h2>
+            Select which option you like to set the navigation bar
+        </h2>
+        <form action="indextop.html">
+            <input type="submit" value="Top"><br><br>
+        </form>
+        <form action="indexright.html" method="get">
+            <input type="submit" value="Right"> <br><br>
+        </form>
+        <form action="indexleft.html">
+            <input type="submit" value="Left"><br><br>
+        </form>
+    </section>
+</body>
+</html>
