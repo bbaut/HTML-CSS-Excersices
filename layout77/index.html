@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Left-display navigation bar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <p>Select the option you want to display the menu</p>
+    <input type="radio" id="top" name="position" value="TOP" checked="checked">
+    <label class="selector" for="top">Top</label>
+    <input type="radio" id="right" name="position" value="RIGHT">
+    <label class="selector" for="right">Right</label>
+    <input type="radio" id="left" name="position" value="LEFT">
+    <label class="selector" for="left">Left</label><br>
+    
+    <nav id="top-menu">
+        <ul class="navlist">
+            <li><a href="#">Who we are</a></li>
+            <li><a href="#">What we do</a>
+                <nav class="subnav">
+                    <ul class="subnavlist">
+                        <li><a href="#">History</a></li>
+                        <li><a href="#">Why theoretical physics</a></li>
+                        <li><a href="#">Facility</a></li>
+                        <li><a href="#">Funding</a></li>
+                    </ul>
+                </nav>
+            </li>
+            <li><a href="#">People</a></li>
+            <li><a href="#">Events</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Info For</a></li>
+        </ul>
+    </nav>
+</body>
+</html>

@@ -1,0 +1,101 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+ul{
+    list-style: none;
+    color: black;
+}
+
+li{
+    padding: 20px 10px;
+}
+
+a{
+    text-decoration:none;
+    color: black;
+}
+
+a:hover{
+    color:white;
+}
+
+.subnav{
+    display:none;
+}
+
+li:hover .subnav{
+    display:block;
+    position:absolute;
+    background: rgb(207, 249, 123);
+    margin-top: 0;
+    margin-left: 0px;
+}
+
+h2{
+    margin: 30px;
+}
+
+
+#right:checked ~ #top-menu{
+    float: right;
+    width: 250px;
+    height: 100%;
+    background-color: yellowgreen;
+    top: 0;
+    right: 0;
+    padding: 20px 30px;
+}
+  
+#left:checked ~ #top-menu{
+    float: left;
+    width: 250px;
+    height: 100%;
+    background-color: yellowgreen;
+    top: 0;
+    right: 0;
+    padding: 20px 30px;
+}
+
+#right:checked ~ #top-menu{
+    float: right;
+    width: 250px;
+    height: 100%;
+    background-color: yellowgreen;
+    top: 0;
+    right: 0;
+    padding: 20px 30px;
+}
+  
+#top:checked ~ #top-menu{
+    background-color: yellowgreen;
+    text-align:center;
+}
+
+#top:checked ~ #top-menu ul{
+    display: inline-flex;
+    list-style:none;
+    color:black;
+}
+
+#top:checked ~ #top-menu ul li{
+    width:120px;
+    margin:15px;
+    padding: 15px;
+}
+
+.selector{
+    padding: 1rem;
+}
+
+input{
+    margin: 0.5rem;
+}
+
+p{
+    padding: 0.5rem;
+    text-align: left;
+}
