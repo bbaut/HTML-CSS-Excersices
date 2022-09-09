@@ -32,7 +32,7 @@ li:hover .subnav{
     position:absolute;
     background: rgb(207, 249, 123);
     margin-top: 0;
-    margin-left: 0px;
+    margin-left: -15px;
 }
 
 h2{
@@ -48,6 +48,16 @@ h2{
     top: 0;
     right: 0;
     padding: 20px 30px;
+    text-align:center;
+}
+
+#right:checked ~ #top-menu li:hover .subnav{
+    display:block;
+    position:absolute;
+    background: rgb(207, 249, 123);
+    margin-top: -36px;
+    margin-left: -140px;
+
 }
   
 #left:checked ~ #top-menu{
@@ -58,33 +68,31 @@ h2{
     top: 0;
     right: 0;
     padding: 20px 30px;
+    text-align:center;
 }
 
-#right:checked ~ #top-menu{
-    float: right;
-    width: 250px;
-    height: 100%;
-    background-color: yellowgreen;
-    top: 0;
-    right: 0;
-    padding: 20px 30px;
+#left:checked ~ #top-menu li:hover .subnav{
+    display:block;
+    position:absolute;
+    background: rgb(207, 249, 123);
+    margin-top: -36px;
+    margin-left: 140px;
+
 }
-  
+
 #top:checked ~ #top-menu{
     background-color: yellowgreen;
     text-align:center;
 }
 
-#top:checked ~ #top-menu ul{
-    display: inline-flex;
+#top:checked ~ #top-menu .navlist{
+    display: inline-flex; 
     list-style:none;
     color:black;
 }
 
 #top:checked ~ #top-menu ul li{
-    width:120px;
-    margin:15px;
-    padding: 15px;
+    width:190px;
 }
 
 .selector{
@@ -98,4 +106,5 @@ input{
 p{
     padding: 0.5rem;
     text-align: left;
+}
 }
